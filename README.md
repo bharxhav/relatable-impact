@@ -62,6 +62,8 @@ USPopulations().simulate(gg_dt, nyc)
 
 ## GOOD STUFF
 
+This is how it would look if DIWALI is celebrated in the USA.
+
 ```python
 up = USPopulations('FFFF00')
 up.mep.add_basemap('CartoDB.DarkMatter')
