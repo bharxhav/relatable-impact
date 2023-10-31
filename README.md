@@ -68,7 +68,7 @@ up.mep.add_basemap('CartoDB.DarkMatter')
 up.sim_plague()
 ```
 
-![US DIWALI](assets/meta/us-diwali.jpeg)
+![US DIWALI](assets/meta/us-diwali.png)
 
 ---
 
