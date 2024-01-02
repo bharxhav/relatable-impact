@@ -1,0 +1,74 @@
+/* Body and General Formatting */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Back to Blog Arrow */
+.back-to-blog {
+    margin-bottom: 20px;
+}
+
+.arrow-link {
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.arrow-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code Blocks */
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Horizontal Rule */
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Credits Section */
+h1 + p {
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+}

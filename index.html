@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Relatable Impact!" />
+        <meta name="author" content="Your Name" />
+        <title>Relatable Impact!</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="back-to-blog">
+                <a href="https://www.bhargavkantheti.com/" class="arrow-link"
+                    >&larr; Back to Blogs</a
+                >
+            </div>
+            <h1>Relatable Impact!</h1>
+            <p>
+                Watch <a href="https://youtu.be/UT_-BeZl2o4">this</a>
+                <code>5min</code> YouTube video for the premise of the project.
+            </p>
+            <a href="https://www.youtube.com/watch?v=UT_-BeZl2o4"
+                ><img src="./assets/meta/thumbnail.jpeg" alt="bk2899"
+            /></a>
+            <hr />
+            <h1>Case Studies</h1>
+            <p>
+                I hope you found the video helpful. It can seem daunting to
+                visualize so many datapoints, or to even find the landcover for
+                your required population count. I went an extra mile, and
+                created two libraries which you can call to
+                <strong>optimally</strong> find desired
+                <code>region-of-interest</code>.
+            </p>
+            <p>
+                The added advantage of using this library is that you can play
+                around with the widget in your jupyter notebook, all you have to
+                do is grant Google Earth Engine permissions to your google cloud
+                platform so that it can render your desired results.
+            </p>
+            <h2>SPACE</h2>
+            <pre><code>
+bands = [3]
+nyc = (-73.968285, 40.785091)
+aus_cover = 59000
+
+USLandCover().simulate(bands, aus_cover, nyc)
+    </code></pre>
+            <img src="./assets/meta/nyc-bf.jpeg" alt="NYC Bushfire" />
+            <p>
+                Extra MILE: Showing the number of trees the
+                <a href="https://teamtrees.org/">Team Trees</a> planted.
+            </p>
+            <pre><code>
+bands = [3]
+nyc = (-73.968285, 40.785091)
+tt_cover = 244.95
+
+USLandCover('008b00').simulate(bands, tt_cover, nyc)
+    </code></pre>
+            <img src="assets/meta/nyc-tt.jpeg" alt="NYC TT" />
+            <h2>TIME</h2>
+            <pre><code>
+USPopulations().sim_plague()
+    </code></pre>
+            <img src="./assets/meta/us-sp.jpeg" alt="US Spanish Plague" />
+            <h2>REALITY</h2>
+            <pre><code>
+nyc = (-73.968285, 40.785091)
+gg_dt = 40000000
+
+USPopulations().simulate(gg_dt, nyc)
+    </code></pre>
+            <img src="./assets/meta/nyc-gk.jpeg" alt="NYC Genghis Khan" />
+            <h2>GOOD STUFF</h2>
+            <pre><code>
+up = USPopulations('FFFF00')
+up.mep.add_basemap('CartoDB.DarkMatter')
+up.sim_plague()
+    </code></pre>
+            <img src="assets/meta/us-diwali.png" alt="US DIWALI" />
+            <hr />
+            <h1>Credits</h1>
+            <p>
+                All the data are as latest as possible. The population data was
+                released on Jul 2023, corresponding to 2022 closing populations.
+            </p>
+            <p>
+                Population Data:
+                <a
+                    href="https://www.census.gov/data/tables/time-series/demo/popest/2020s-total-cities-and-towns.html"
+                    >US Gov</a
+                >
+            </p>
+            <p>Geemap Library: <a href="https://geemap.org/">geemap</a></p>
+        </div>
+    </body>
+</html>
