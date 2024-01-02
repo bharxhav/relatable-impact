@@ -16,18 +16,58 @@
             </div>
             <h1>Relatable Impact!</h1>
             <p>
-                Watch <a href="https://youtu.be/UT_-BeZl2o4">this</a>
-                <code>5min</code> YouTube video for the premise of the project.
+                The outcomes of a Data Science project
+                <strong>require</strong> impactful communication to the
+                audience. For this project, I considered global crises that
+                effected large populations.
             </p>
-            <a href="https://www.youtube.com/watch?v=UT_-BeZl2o4"
-                ><img src="./assets/meta/thumbnail.jpeg" alt="bk2899"
-            /></a>
+            <p>You can watch this 5min YouTube video for a short summary.</p>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/UT_-BeZl2o4"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+
+            <hr />
+            <h1>Principles</h1>
+            <p>
+                Global crises can be made more relatable by understanding the
+                <strong>Psychological Distance</strong> inducing lack of
+                relatability.
+                
+                <br>
+                <br>
+                Psychological distance is like how far away something feels in your mind. It's not about physical distance, but more about how close or far things seem in time, space, or even emotionally. For example, something happening far away might feel less important to you than something happening nearby. It's all about how we see things in our minds, whether they feel close or far, even if they're not physically distant.
+                <br>
+                <br>
+
+                For the case studies I take, I reduce psychological distance using
+                <ul>
+                    <li>Space</li>
+                    <li>Time</li>
+                    <li>Reality</li>
+                </ul>
+                I visually showcase this by high-contrast maps.
+
+                <br>
+                <br>
+
+                I also use the concept of "extra-mile", which uses two principles:
+                <ul>
+                    <li><strong>Contrasting Clarity:</strong> When you want to show how bad something is, you emphasize it's impact with something even worse.</li>
+                
+                    <li><strong>Relative Deprivation:</strong> When you feel like things are really bad because you compare them to how they used to be.</li>
+                </ul>
+                
+            </p>
+
             <hr />
             <h1>Case Studies</h1>
             <p>
-                I hope you found the video helpful. It can seem daunting to
-                visualize so many datapoints, or to even find the landcover for
-                your required population count. I went an extra mile, and
+                It can seem daunting to visualize so many datapoints, or to even find the landcover for
+                your required population count. I personally went an extra mile, and
                 created two libraries which you can call to
                 <strong>optimally</strong> find desired
                 <code>region-of-interest</code>.
@@ -39,6 +79,8 @@
                 platform so that it can render your desired results.
             </p>
             <h2>SPACE</h2>
+            <h3>What if Australian Bushfires occurred in New York?</h3>
+            Making the Bushfires relatable to citizens of New York.
             <pre><code>
 bands = [3]
 nyc = (-73.968285, 40.785091)
@@ -59,12 +101,16 @@ tt_cover = 244.95
 USLandCover('008b00').simulate(bands, tt_cover, nyc)
     </code></pre>
             <img src="assets/meta/nyc-tt.jpeg" alt="NYC TT" />
+            <hr>
             <h2>TIME</h2>
+            <h3>What if Spanish Plague re-emerged?</h3>
             <pre><code>
 USPopulations().sim_plague()
     </code></pre>
             <img src="./assets/meta/us-sp.jpeg" alt="US Spanish Plague" />
+            <hr>
             <h2>REALITY</h2>
+            <h3>What if Genghis Khan sailed into the US?</h3>
             <pre><code>
 nyc = (-73.968285, 40.785091)
 gg_dt = 40000000
@@ -72,7 +118,10 @@ gg_dt = 40000000
 USPopulations().simulate(gg_dt, nyc)
     </code></pre>
             <img src="./assets/meta/nyc-gk.jpeg" alt="NYC Genghis Khan" />
+            <hr>
             <h2>GOOD STUFF</h2>
+            We can also showcase good things.
+            <h3>What if Diwali was celebrated in the US?</h3>
             <pre><code>
 up = USPopulations('FFFF00')
 up.mep.add_basemap('CartoDB.DarkMatter')

@@ -6,6 +6,11 @@ body {
     padding: 20px;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto; /* Sets horizontal margin to auto, effectively centering the iframe */
+}
+
 /* Back to Blog Arrow */
 .back-to-blog {
     margin-bottom: 20px;
@@ -48,10 +53,11 @@ code {
 
 /* Images */
 img {
-    max-width: 100%;
-    height: auto;
     display: block;
-    margin: 20px 0;
+    margin: 0 auto; /* Centers the images horizontally */
+    max-width: 100%; /* Limits image width to its container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 600px; /* Limits maximum height for larger images */
 }
 
 /* Horizontal Rule */
